@@ -23,22 +23,37 @@
                     echo"</ul>";
 				}else{
 					printStudent($_GET['s'],$data[$_GET['s']]);
+                    echo "<button><a href='#'>Edit</a></button>";
 					echo "<button><a href='?'>Back</a></button>";
 				}
 				function printStudent($index,$student,$isInList=false){
-
-					echo "<li>".
-						( 
-						$isInList ? "<a href='?s=$index'>".$student->name."</a>" : $student->name
-						).
-						"</li>";
-
-					if(!$isInList) {
-                        echo "<li>" . $student->major . "</li>";
+                    if ($isInList) {
+                        echo "<li>"."<a href='?s=$index'>".$student->name."</a>"."</li>";
+                    } else {
+                        echo "<table>";
+                        echo "<tr>"."<th>Student Name</th>"."<th>Major</th>";
                         if (isset($student->marriages)) {
-                            echo "<li>" . $student->marriages . "</li>";
+                            echo "<th>Marriages</th>"."</tr>";
                         }
+                        echo "<tr>"."<td>".$student->name."</td>"."<td>".$student->major."</td>";
+                        if (isset($student->marriages)) {
+                            echo "<td>".$student->marriages."</td>";
+                        }
+                        echo "</table>";
                     }
+
+//					echo
+//						(
+//						$isInList ? "<li>"."<a href='?s=$index'>".$student->name."</a>"."</li>" : "<tr>"."<td>".$student->name."</td>"
+//						);
+//
+//					if(!$isInList) {
+//                        echo "<td>" . $student->major . "</td>";
+//                        if (isset($student->marriages)) {
+//                            echo "<td>" . $student->marriages . "</td>";
+//                        }
+//                    }
+//                    echo "</table>";
 				}
 			?>
 	</div>
