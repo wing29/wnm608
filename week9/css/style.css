@@ -68,10 +68,13 @@ button{
     outline: none;
     border:0;
     box-shadow: none;
-
+    font-size: 1em;
+    color:#ffffff;
+}
+button:hover{
+    text-decoration: underline;
 }
 button a{
-    font-size: 1.3em;
     color:#ffffff;
 }
 table,tr{

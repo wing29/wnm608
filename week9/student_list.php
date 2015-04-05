@@ -34,9 +34,12 @@
                     $ret = file_put_contents($filename, json_encode($data));
 
                     if ($ret == false) {
-                        echo "<div>Failed to update ".$data[$index]['name']."</div>";
+                        echo "<div><h5>Oops! something went wrong. File is not updated</h5></div>";
+                        echo "<button><a href='?s=$index'>Back</a></button>";
+
                     } else {
-                        echo "<div>Updated ".$data[$index]['name']."</div>";
+                        echo "<div><h5>Update Successful!</h5></div>";
+                        echo "<button><a href='?s=$index'>Back</a></button>";
                     }
                 }
 				else if (!isset($_GET['s'])) {
