@@ -56,96 +56,11 @@
 				
 			<!-- <div class="container"> -->
 				<div class="row">
-					<!-- product1 -->
-					<div class="product column col-4 col-ms-6 col-xs-12">
-						<div class="image-wrapper">
-							<img src="images/gallery/A1_Plants.jpg" alt="">
-			
-							<div class="caption-wrapper">
-								<div class="caption padded-xl nd">
-									<h5>Wood and Copper Mount with Terrarium</h5>
-									<h5>$60.00</h5>
-									<a href="plants.html">view</a>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-					<!-- product2 -->
-					<div  class="product column col-4 col-ms-6 col-xs-12">
-						<div class="image-wrapper">
-							<img src="images/gallery/B1_Sweep-It_Set.jpg" alt="">
-			
-							<div class="caption-wrapper">
-								<div class="caption padded-xl nd">
-									<h5>Sweep-It Set</h5>
-									<h5>$25.00</h5>
-									<a href="Sweep-It-Set.html">view</a>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-					<!-- product3 -->
-					<div  class="product column col-4 col-ms-6 col-xs-12">
-						<div class="image-wrapper">
-							<img src="images/gallery/C1_hot_binary_heat_change_mug.gif" alt="">
-			
-							<div class="caption-wrapper">
-								<div class="caption padded-xl nd">
-									<h5>Hot Binary Heat Change Mug</h5>
-									<h5>$11.99</h5>
-									<a href="HeatSensitiveMug.html">view</a>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-					<!-- product4 -->
-					<div  class="product column col-4 col-ms-6 col-xs-12">
-						<div class="image-wrapper">
-							<img src="images/gallery/D1_tic.jpg" alt="">
-			
-							<div class="caption-wrapper">
-								<div class="caption padded-xl nd">
-									<h5>tic®</h5>
-									<h5>€3.50</h5>
-									<a href="Tic.html">view</a>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-					<!-- product5 -->
-					<div  class="product column col-4 col-ms-6 col-xs-12">
-						<div class="image-wrapper">
-							<img src="images/gallery/E1_Leaf_Tea_Infuser.jpg" alt="">
-			
-							<div class="caption-wrapper">
-								<div class="caption padded-xl nd">
-									<h5>Leaf Tea Infuser</h5>
-									<h5>$14.00</h5>
-									<a href="LeafTeaInfuser.html">view</a>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-					<!-- product6 -->
-					<div  class="product column col-4 col-ms-6 col-xs-12">
-						<div class="image-wrapper ">
-							<img src="images/gallery/Robot_Pendulum_Clock.jpg" alt="">
-			
-							<div class="caption-wrapper">
-								<div class="caption padded-xl nd">
-									<h5>Robot Pendulum Clock</h5>
-									<h5>$42.00</h5>
-									<a href="RobotClock.html">view</a>
-								</div>
-							</div>
-						</div>
-					
-					</div>
+                    <?php
+                    if(isset($_GET['product']))
+                        include "php/product_mysql.php";
+                    else include "php/products_mysql.php";
+                    ?>
 				</div>
 			<!-- </div> -->
 			
