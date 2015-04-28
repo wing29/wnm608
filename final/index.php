@@ -23,7 +23,7 @@
 
 			<nav id="mobile-nav" class="nav clearfix" role="navigation">
 				<ul>
-					<li><a href="index.html">Shop</a></li>
+					<li><a href="?">Shop</a></li>
 					<li><a href="">About</a></li>
 					<li><a href="#home"><img src="images/logo.png" alt="kate spade"></a></li>
 					<li><a href="">Blog</a></li>
@@ -32,39 +32,13 @@
 			</nav>
 		</header>
 
-		<div class="main_content"> <!-- wraps the main content -->
-			<!-- begin carousel -->
-			<section class="slider padded">
-			
-				<div class="carousel-wrapper">
-					<div class="carousel">
-						<ul>
-							<li><a href=""><img src="images/gallery/carousel/plant_carousel.jpg" alt="product"></a></li>
-							<li><a href=""><img src="images/gallery/carousel/gift_idea_carousel.jpg"></a></li>
-							<li><a href=""><img src="images/gallery/carousel/wall_carousel.jpg"></a></li>
-						</ul>
-					</div>
-			
-					<a href="#" class="left" id="left">&lsaquo;</a>
-			        		<a href="#" class="right" id="right">&rsaquo;</a>
-				</div>
-			
-			</section><!-- End carousel -->
-			
-			<!-- begin gallery -->
-			<section class="gallery padded">
 				
-			<!-- <div class="container"> -->
-				<div class="row">
                     <?php
                     if(isset($_GET['product']))
                         include "php/product_mysql.php";
                     else include "php/products_mysql.php";
                     ?>
-				</div>
-			<!-- </div> -->
-			
-			</section><!--  end gallery -->
+
 			
 			<!-- begin footer -->
 			<footer class="padded nt">

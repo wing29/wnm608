@@ -42,19 +42,9 @@
 						<div class="big-image">
 							<ul>
 								<li><img src="images/gallery/Robot_Pendulum_Clock.jpg" alt="product"></li>
-							<!-- 	<li><img src="images/product.jpg" alt="product"></li>
-								<li><img src="images/product.jpg" alt="product"></li>
-								<li><img src="images/product.jpg" alt="product"></li> -->
 							</ul>
 						</div>
-						<!-- <div class="thumb-image">
-							<ul>
-								<li><img src="images/product-thumb.jpg" alt=""></li>
-								<li><img src="images/product-thumb.jpg" alt=""></li>
-								<li><img src="images/product-thumb.jpg" alt=""></li>
-								<li><img src="images/product-thumb.jpg" alt=""></li>
-							</ul>
-						</div> -->
+				
 					</div>
 				</div> <!-- end image slider -->
 				
@@ -68,7 +58,6 @@
 							<p>Designer: Paul Ocepek</p>
 							<div class="button"><a href="http://www.momastore.org/museum/moma/ProductDisplay_Robot%20Pendulum%20Clock_10451_10001_183560_-1_26663_11551_183594" target="_blank">Check it out</a></div>		
 						</div>
-
 				</div>
 			</div>
 		</section> <!-- end product content-->
